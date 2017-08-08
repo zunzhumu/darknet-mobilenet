@@ -15,3 +15,6 @@ mobilenet_yolo_voc:(According to loss value, I guess mAP 0.5mAP 65%-70%)
 链接: https://pan.baidu.com/s/1qY4Vy9m 密码: qk4q
 
 By visualing the weights of mobilenet, we found that some filters have a weight of zero. We compress the mobilenet with thresholds of 0.0001 and 0.08, respectively. So the model with thresholds 0.0001 achived the same accuracy as original mobilenet (top-1: 0.712540, top-5: 0.903520), and the other model with thresholds 0.08 achived accuracy with top-1 0.682580 and top-5 0.885100. All the compress model without finetune.
+
+Update
+Compress mobilenet with threshold of 0.1, then finetune it for 20 epochs, finally this network achived accuracy with top-1 0.697 and top-5 0.897, and the size of this model is 10.1M.
