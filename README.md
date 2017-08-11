@@ -18,4 +18,4 @@ By visualing the weights of mobilenet, we found that some filters have a weight 
 
 Update
 
-Compress mobilenet with threshold of 0.1, then finetune it for 20 epochs, finally this network achived accuracy with top-1 0.697 and top-5 0.897, and the size of this model is 10.1M.
+Compress mobilenet with threshold of 0.1, then finetune it for 20 epochs, finally this network achived accuracy with top-1 0.697 and top-5 0.897, and the size of this model is 10.1M (18M->10M).
